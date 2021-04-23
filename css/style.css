@@ -1,0 +1,82 @@
+body {
+margin: 0;
+padding: 0}
+/**/
+.cabecalho {
+    line-height: 200px;
+    text-align: center;
+    padding-top: 30px;
+    
+  }
+  
+  .cabecalho {
+    line-height: 1.5;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+ /* Add a gray right border to all list items, except the last item (last-child) */
+ li {
+    border-right: 1px solid #bbb;
+  }
+  
+  li:last-child {
+    border-right: none;
+  } 
+/*FIXA O MENU*/
+  .topnav .ul-menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .topnav .ul-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ li {
+     float: left;
+}
+
+ .topnav .ul-menu li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.topnav .ul-menu li a:hover {
+    background-color: #555;
+    color: white;
+  }
+  .topnav .ul-menu li {
+    background-color: #4CAF50;
+}
+/*
+
+ul.topnav li a:hover {
+    background-color: #111;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+*/
+/*ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+*/
+
+.topnav .ul-menu li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav .ul-menu li.right, .topnav .ul-menu li {
+      float: none;
+    }
+}
